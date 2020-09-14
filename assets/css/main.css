@@ -1,6 +1,7 @@
 .header {
     height: 120px;
-    background: linear-gradient(0, #fe6433, #f35e2d)
+    background: linear-gradient(0, #fe6433, #f35e2d);
+    /* position: fixed; */
 }
 .header__nav-bar {
     display: flex;
@@ -762,6 +763,8 @@
 .main {
     background-color: #F5F5F5;
     padding-top: 40px;
+    padding-bottom: 40px;
+    /* margin-top: 120px; */
 }
 .category {
     border-radius: 4px;
@@ -1108,4 +1111,67 @@
 }
 .pagination__link-btn--right {
     margin-left: 20px;
+}
+
+/* ===================Style Footer================= */
+.footer {
+    /* margin-top: 40px; */
+    background-color: #fff;
+    border-top: 5px solid var(--color-primary-dark);
+}
+.footer a{
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+.footer a:hover {
+    color: var(--color-primary);
+
+}
+.footer__info {
+    margin-top: 100px;
+    border-radius: 2px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 1px 2px 1px -2px rgba(0, 0, 0, .5);
+}
+.footer__heading {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /* text-align: center; */
+}
+.download__list {
+    display: flex;
+}
+.payment__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.payment__item {
+    margin-right: 5px;
+}
+.payment__item-img {
+    width: 60px;
+}
+.download__list-qr {
+    width: 80px;
+}
+.app-img {
+    width: 87px;
+}
+.apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80px;
+}
+.download__item--apps {
+    flex: 1;
+}
+.footer__location {
+    padding-top: 30px;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--color-grey-blur);
 }
