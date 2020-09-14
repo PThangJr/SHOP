@@ -1,0 +1,40 @@
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.container-fluid {
+    width: 100%;
+}
+.container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -6px;
+    margin-right: -6px;
+}
+.col-2-12 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 16.6667%;
+}
+.col-10-12 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 83.3333%;
+}
+.col-2-10 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 20%;
+    margin-top: 20px;
+
+}
+.col-8 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 66.6667%;
+}

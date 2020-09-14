@@ -1,0 +1,57 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --text-color-grey: rgb(168, 166, 166);
+    --color-primary: #fd5f32;
+    --color-primary-light: #fd6035;
+    --color-primary-dark: #ff361f;
+    --color-grey: rgb(241, 234, 234);
+    --color-grey-light: rgb(247, 239, 239);
+    --color-grey-blur: rgb(153, 153, 153);
+    --color-white-blur: rgb(247, 247, 247);
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    line-height: 1.6rem;
+}
+
+
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+/* a:visited {
+    color: grey;
+}
+a:focus {
+    color: grey;
+} */
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.2);
+    /* background: green; */
+}
