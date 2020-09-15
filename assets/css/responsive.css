@@ -1,8 +1,4 @@
 
-.container-wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -11,16 +7,7 @@
 }
 
 
-.col-2-12 {
-    padding-left: 6px;
-    padding-right: 6px;
-    width: 16.6667%;
-}
-.col-10-12 {
-    padding-left: 6px;
-    padding-right: 6px;
-    width: 83.3333%;
-}
+
 .col-2-10 {
     padding-left: 6px;
     padding-right: 6px;
@@ -28,10 +15,49 @@
     margin-top: 20px;
 
 }
-.col-8 {
-    padding-left: 6px;
-    padding-right: 6px;
-    width: 66.6667%;
-}
+
 
 /* 1. Moblie và Tablet */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 80px;
+        --header-navbar-height: 0px;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 20;
+    }
+    .header__cart {
+        flex: 0;
+        min-width: 80px;
+        justify-content: flex-end;
+    }
+    .header__cart-products {
+        width: 100%;
+        position: fixed;
+        top: var(--header-height);
+        padding: 0 calc( (100% - 640px) / 2);
+    }
+    .header__cart-products::after {
+        display: none;
+    }
+    .main {
+        margin-top: var(--header-height);
+    }
+    .header__sort-bar {
+        display: block;
+    }
+    .menu-filter {
+        display: none;
+    }
+} 
+/* 2. Tablet  */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+/* 3. Moblie */
+@media (max-width: 739px) {
+
+}

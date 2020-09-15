@@ -575,6 +575,44 @@
     margin-left: 10px;
     padding: 5px;
 }
+/* Header sort bar */
+.header__sort-bar {
+    background-color: var(--color-grey-light);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+    display: none;
+}
+.header__sort-list {
+    display: flex;
+}
+.header__sort-item {
+    flex: 1;
+    text-align: center;
+}
+
+.header__sort-item--active .header__sort-link {
+    color: var(--color-primary);
+}
+.header__sort-link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    display: block;
+    padding: 10px 0;
+    position: relative;
+}
+.header__sort-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 35%;
+    width: 1px;
+    background-color: rgba(180, 180, 180, 0.6);
+}
+.header__sort-item:nth-child(4) .header__sort-link::after {
+    display: none;
+}
 /* Giỏ hàng */
 .header__cart {
     flex: 1;

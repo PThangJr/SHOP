@@ -27,6 +27,18 @@
     padding-left: 0;
     padding-right: 0;
 }
+.c {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.row.sm-gutters {
+    padding-left: 6px;
+    padding-right: 6px;
+}
 .col {
     padding-left: 15px;
     padding-right: 15px;
@@ -37,11 +49,12 @@
         margin-left: -4px;
         margin-right: -4px;
     }
-    .col {
+    .col,
+    .c-sm {
         padding-left: 4px;
         padding-right: 4px;
     }
-
+   
     .sm-0 {
         display: none;
     }
@@ -135,7 +148,8 @@
         margin-left: -8px;
         margin-right: -8px;
     }
-    .col {
+    .col,
+    .c-md {
         padding-left: 8px;
         padding-right: 8px;
     }
@@ -245,7 +259,8 @@
         margin-left: -12px;
         margin-right: -12px;
     }
-    .col {
+    .col,
+    .c-lg {
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -356,8 +371,8 @@
     .container {
         width: 100%;
     }
-    .container .sm-hide {
-        display: none;
+     .sm-hide {
+        display: none !important;
     }
 }
 /* 2. Tablet và PC low Revolution */
@@ -365,8 +380,8 @@
     .container {
         width: 644px;
     }
-    .container .md-hide {
-        display: none;
+     .md-hide {
+        display: none !important;
     }
 }
 /* 3. PC */
@@ -375,8 +390,22 @@
         width: 984px;
     }
     /* ====Hide==== */
-    .container .lg-hide {
-        display: none;
+     .lg-hide {
+        display: none !important;
     }
 }
-
+/* 4.PC high revolution */
+@media (min-width: 1240px) {
+    .hg-hide {
+        display: none;
+    }
+    
+    .c-hg {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .row.sm-gutters .c-hg {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
