@@ -10,6 +10,11 @@
     --color-grey-light: rgb(247, 239, 239);
     --color-grey-blur: rgb(153, 153, 153);
     --color-white-blur: rgb(247, 247, 247);
+
+
+    --header-height: 120px;
+    --header-navbar-height: 32px;
+    --header-controls-height: calc(var(--header-height) - var(--header-navbar-height));
 }
 
 * {

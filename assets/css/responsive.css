@@ -1,11 +1,4 @@
-.container {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.container-fluid {
-    width: 100%;
-}
+
 .container-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -16,6 +9,8 @@
     margin-left: -6px;
     margin-right: -6px;
 }
+
+
 .col-2-12 {
     padding-left: 6px;
     padding-right: 6px;
@@ -38,3 +33,5 @@
     padding-right: 6px;
     width: 66.6667%;
 }
+
+/* 1. Moblie và Tablet */
