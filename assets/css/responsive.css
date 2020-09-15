@@ -15,8 +15,12 @@
     margin-top: 20px;
 
 }
-
-
+/* PC high revolution */
+@media (min-width: 1024px) and (max-width: 1113px) {
+    .category {
+        display: none;
+    }
+}
 /* 1. Moblie và Tablet */
 @media (max-width: 1023px) {
     :root {
@@ -49,15 +53,34 @@
     .header__sort-bar {
         display: block;
     }
-    .menu-filter {
+    .menu-filter,
+    .category {
         display: none;
     }
 } 
 /* 2. Tablet  */
 @media (min-width: 740px) and (max-width: 1023px) {
-
+    .category {
+        display: none;
+    }
 }
 /* 3. Moblie */
 @media (max-width: 739px) {
-
+    .header__cart {
+        justify-content: center;
+    }
+    .header__controls-btn-menu {
+        display: flex;
+    }
+    .header__logo {
+        display: flex;
+        justify-content: center;
+    }
+    .pagination__item-link {
+        font-size: 1.2rem;
+        padding: 0 8px;
+    }
+    .mobile-category {
+        display: block;
+    }
 }
