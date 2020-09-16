@@ -3,6 +3,8 @@
     background: linear-gradient(0, #fe6433, #f35e2d);
     /* position: fixed; */
 }
+
+
 .header__nav-bar {
     display: flex;
     justify-content: space-between;
@@ -484,8 +486,9 @@
     display: none;
     font-size: 1.4rem;
     color: var(--color-grey-blur);
-    margin-right: 2px;
-    padding: 0 3px;
+    margin-right:4px;
+    margin-left: 12px;
+    padding: 0 2px;
 }
 .header__search-box {
     z-index: 8;
@@ -956,7 +959,7 @@
     margin: 0 var(--margin-2-sides);
     text-align: start;
     padding: 8px 15px;
-    min-width: 200px;
+    min-width: 190px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1017,7 +1020,7 @@
 
 }
 .menu-filter__pagination-btn {
-    margin: 0 calc(var(--margin-2-sides) + 15px);
+    margin: 0 calc(var(--margin-2-sides) + 10px);
 }
 .btn__move {
     padding: 8px 15px;
@@ -1273,10 +1276,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 80px;
+    height: 90px;
 }
 .download__item--apps {
     flex: 1;
+    margin-left: 25px;
 }
 .footer__location {
     padding-top: 30px;

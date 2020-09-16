@@ -72,11 +72,12 @@
     .header__logo-tablet {
         display: block;
     }
+}
 /* 3. Moblie */
 @media (max-width: 739px) {
-    html {
-        /*font-size: 60.5%;*/
-    }
+    
+
+
     [class*="sm-"] {
         margin-bottom: 10px;
     }
@@ -108,7 +109,19 @@
     .mobile-category {
         display: block;
     }
+    .footer__info {
+        text-align: center;
+    }
     .footer__heading {
         font-size: 1.2rem;
+    }
+    .payment__list {
+        justify-content: center;
+    }
+    .download__list {
+        justify-content: center;
+    }
+    .download__item--apps {
+        flex: unset;
     }
 }

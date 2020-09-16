@@ -8,7 +8,7 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-.container-fluild {
+.container-fluid {
     padding: 0;
     display: block;
     width: 100%;
@@ -53,14 +53,14 @@
 }
 @media (max-width: 739px) {
     /* ====Gutters==== */
-    .container .row {
-        margin-left: -4px;
-        margin-right: -4px;
+    .row {
+        margin-left: -6px;
+        margin-right: -6px;
     }
     .col,
     .c-sm {
-        padding-left: 4px;
-        padding-right: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
     /*[class*="sm-"] {
         border: 1px solid;
@@ -386,7 +386,7 @@
 /* 1. Mobile */
 @media (max-width: 739px) {
     .container {
-        width: 100%;
+        width: 98%;
     }
     .container .sm-hide {
         display: none ;
