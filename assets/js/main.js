@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let number = Number(cartBox.getAttribute("data-count"));
     // console.log(cartBox.getAttribute("data-count"));
     // number.setAttribute("data-count", 1);
-    
+    const btnSearch = document.querySelector(".fas.fa-search");
+    const btnArrowBack = document.querySelector(".fas.fa-arrow-left");
+    const headerSearchBox = document.querySelector(".header__search-box");
 
     const btnPrevFront = btnPrev[0];
     const btnPrevBack = btnPrev[1];
@@ -95,8 +97,17 @@ document.addEventListener("DOMContentLoaded", () => {
           }) 
 
       }
-
+      // Xử lý nút search trong revolution mobile
+    btnSearch.addEventListener("click", function() {
+        headerSearchBox.classList.toggle("sm-hide")
         
+    })
+    btnSearch.addEventListener("blur", function(e) {
+        console.log(e)
+    })
+    btnArrowBack.addEventListener("click", function() {
+        headerSearchBox.classList.toggle("sm-hide")
+    })    
 
 
    

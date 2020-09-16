@@ -450,6 +450,15 @@
     justify-content: space-around;
     height: var(--header-controls-height);
 }
+.header__logo-tablet {
+    display: none;
+}
+.header__logo-tablet-link {
+    display: block;
+}
+.header__logo-tablet-img {
+    width: 80px;
+}
 .header__logo {
     flex: 1;
 }
@@ -471,7 +480,13 @@
 .btn--menu {
     color: var(--white-color);
 }
-
+.fas.fa-arrow-left {
+    display: none;
+    font-size: 1.4rem;
+    color: var(--color-grey-blur);
+    margin-right: 2px;
+    padding: 0 3px;
+}
 .header__search-box {
     z-index: 8;
     flex: 4;
@@ -482,6 +497,7 @@
     display: flex;
     align-items: center;
     border-radius: 4px;
+    transition: all .5s;
 
 }
 /* Lịch sử tìm kiếm */
@@ -655,7 +671,7 @@
     background-color: #88CF81;
 }
 .mobile-category__link {
-    padding: 2px 5px;
+    padding: 4px 5px;
     border-radius: 4px;
     --line-height: 1.4rem;
     display: block;

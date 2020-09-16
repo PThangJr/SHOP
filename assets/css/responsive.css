@@ -63,9 +63,34 @@
     .category {
         display: none;
     }
-}
+    .footer__heading {
+        font-size: 1.2rem;
+    }
+    .header__search-histories {
+        width: 90%;
+    }
+    .header__logo-tablet {
+        display: block;
+    }
 /* 3. Moblie */
 @media (max-width: 739px) {
+    html {
+        /*font-size: 60.5%;*/
+    }
+    [class*="sm-"] {
+        margin-bottom: 10px;
+    }
+    .header__search-box {
+        position: fixed;
+        top: calc(var(--header-height) + var(--header-navbar-height));
+        /*flex-direction: row-reverse;*/
+    }
+    .fas.fa-arrow-left {
+    display: block;
+    }
+    .header__search-histories {
+        width: 100%;
+    }
     .header__cart {
         justify-content: center;
     }
@@ -82,5 +107,8 @@
     }
     .mobile-category {
         display: block;
+    }
+    .footer__heading {
+        font-size: 1.2rem;
     }
 }

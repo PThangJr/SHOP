@@ -37,13 +37,14 @@
 }
 
 .row.sm-gutters {
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: -6px;
+    margin-right: -6px;
 }
-.row.sm-gutters .col.[class*="lg-"] {
+.row.sm-gutters .col {
     padding-left: 6px;
     padding-right: 6px;
 }
+
 
 
 .col {
@@ -61,6 +62,9 @@
         padding-left: 4px;
         padding-right: 4px;
     }
+    /*[class*="sm-"] {
+        border: 1px solid;
+    }*/
    
     .sm-0 {
         display: none;
@@ -149,7 +153,7 @@
         margin-left: 91.66667%;
     }
 }
-@media (min-width: 740px) {
+@media (min-width: 740px) and (max-width: 1112px){
     /* ====Gutters==== */
     .row {
         margin-left: -8px;
