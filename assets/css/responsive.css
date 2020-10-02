@@ -20,12 +20,18 @@
     .category {
         display: none;
     }
+    .btn--back {
+        display: none;
+    }
 }
 /* 1. Moblie và Tablet */
 @media (max-width: 1023px) {
     :root {
         --header-height: 80px;
         --header-navbar-height: 0px;
+    }
+    .btn--back {
+        display: block;
     }
     .header {
         position: fixed;
@@ -37,6 +43,9 @@
         flex: 0;
         min-width: 80px;
         justify-content: flex-end;
+    }
+    .header__cart-box:hover  .header__cart-products {
+        display: none;
     }
     .header__cart-products {
         width: 100%;
@@ -62,6 +71,9 @@
 @media (min-width: 740px) and (max-width: 1023px) {
     .category {
         display: none;
+    }
+    .btn--back {
+        display: block;
     }
     .footer__heading {
         font-size: 1.2rem;
@@ -94,6 +106,12 @@
     }
     .header__cart {
         justify-content: center;
+    }
+    .header__cart-item-name {
+        width: 155px;
+    }
+    .btn {
+        padding: 8px 15px;
     }
     .header__controls-btn-menu {
         display: flex;

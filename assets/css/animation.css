@@ -28,3 +28,19 @@
         transform: scale(0.4);
     }
 }
+@keyframes transMenuShow {
+    0% {
+
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes transMenuHide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

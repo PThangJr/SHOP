@@ -4,6 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalOverlay = document.querySelector(".modal__overlay");
     const modalBody = document.querySelector(".modal__body");
     const modalBodyBox = document.querySelector(".modal__body-box");
+    const menuBars = document.querySelector(".menu-bars");
+    const menuBarsOverlay = document.querySelector(".menu-bars-overlay");
+    const menuBarsBtnMenu = document.querySelector(".btn--menu");
+    const menuBarsBtnClose = document.querySelector(".btn-close");
+    const headerCartBox = document.querySelector(".header__cart-box");
+    const headerCartProducts = document.querySelector(".header__cart-products");
+    const btnBack = document.querySelector(".btn--back");
+    
     let btnPrev = document.querySelectorAll(".btn--prev");
     let cartBox = document.querySelector(".header__cart-box");
     let number = Number(cartBox.getAttribute("data-count"));
@@ -98,18 +106,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
       }
       // Xử lý nút search trong revolution mobile
-    btnSearch.addEventListener("click", function() {
+    btnSearch.addEventListener("click", () => {
         headerSearchBox.classList.toggle("sm-hide")
         
     })
-    btnSearch.addEventListener("blur", function(e) {
+    btnSearch.addEventListener("blur", (e) => {
         console.log(e)
     })
-    btnArrowBack.addEventListener("click", function() {
+    btnArrowBack.addEventListener("click", (e) => {
         headerSearchBox.classList.toggle("sm-hide")
     })    
 
+    menuBarsBtnMenu.addEventListener("click", (e) => {
+        menuBars.classList.remove("menu-bars-hide");
+        menuBars.classList.add("menu-bars-show");
+        menuBarsOverlay.style.display = "block";
 
+    })
+    menuHide = () => {
+        menuBars.classList.add("menu-bars-hide");
+        menuBars.classList.remove("menu-bars-show");
+        const menuBarsHide = document.querySelector(".menu-bars-hide");
+        menuBarsOverlay.style.display = "none";
+
+    }
+    menuBarsOverlay.addEventListener("click", () => {
+        menuHide();
+    })
+    menuBarsBtnClose.addEventListener("click", () => {
+        menuHide();
+    })
    
+
+    
+        headerCartBox.addEventListener("click", () => {
+            if(window.innerWidth < 1023) {
+                headerCartProducts.style.display = "block";
+            }
+            else {
+                return;
+            }
+        })
+        
+        btnBack.addEventListener("click", (e) => {
+            e.stopPropagation();
+            headerCartProducts.style.display = "none";
+        })
 
 },false);

@@ -18,7 +18,62 @@
 </head>
 
 <body>
+    <div class="menu-bars">
+        <div class="menu-apps">
+            <i class="fas fa-arrow-left btn-close"></i>
+            <h3 class="menu-apps__heading">
+                Menu
+            </h3>
+            <ul class="menu-apps__list">
+                <li class="menu-apps__item">
+                    <a href="" class="menu-apps__link">
+                        Tất cả sản phẩm
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="menu-apps__item">
+                    <a href="" class="menu-apps__link">
+                        Ví điện tử
+                        <i class="fas fa-chevron-right"></i>
 
+                    </a>
+                </li>
+                <li class="menu-apps__item">
+                    <a href="" class="menu-apps__link">
+                        <div class="menu-apps__news">
+                            <i class="far fa-newspaper"></i>
+                            Cập nhật mới
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+
+                    </a>
+                </li>
+                <li class="menu-apps__item">
+                    <a href="" class="menu-apps__link">
+                        <div class="menu-apps__acc">
+                            <i class="fas fa-user-plus"></i>
+                            Đăng ký
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="menu-apps__item">
+                    <a href="" class="menu-apps__link">
+                        <div class="menu-apps__acc">
+                            <i class="fas fa-user"></i>
+
+                            Đăng nhập
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <div class="menu-bars-overlay">
+    </div>
     <div class="wrapper container-fluid">
         <header class="header" id="header">
             <div class="container">
@@ -384,7 +439,11 @@
                                         <img src="./assets/img/empty_product.svg" alt="Empty"
                                             class="header__cart-list-no-product-img">
                                     </div>
-                                    <button class="btn btn--primary header__cart-btn-view  ">Xem giỏ hàng</button>
+                                    <div class="header__cart-btn">
+                                        <button class="btn btn--primary header__cart-btn-view">Xem giỏ hàng</button>
+                                        <button class="btn btn--primary header__cart-btn-view btn--back">Quay lại</button>
+                                        
+                                    </div>
                                 </div>
                             </div>
 
@@ -614,347 +673,22 @@
                                 </li>
                                 <li class="mobile-category__item">
                                     <a href="" class="mobile-category__link">
-                                       Phụ kiện Laptop, Bàn phím cơ, Chuột gaming
+                                        Phụ kiện Laptop, Bàn phím cơ, Chuột gaming
                                     </a>
                                 </li>
                                 <li class="mobile-category__item">
                                     <a href="" class="mobile-category__link">
-                                      Các thiết bị khác
+                                        Các thiết bị khác
                                     </a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="products">
-                            
+
                             <div class="row sm-gutters">
                                 <div class="col lg-2-4 md-3 sm-6">
                                     <div class="product__item">
                                         <a href="" class="product__item-link">
-                                                <div class="product__item-bg"
-                                                    style="background-image: url('./assets/img/bg-product-img.png')">
-                                                    <img class="product__item-img" src="./assets/img/product-img-2.jpg"
-                                                        alt="Product 1">
-                                                    <span class="product__item-fav">Yêu thích</span>
-                                                    <div class="product__item-sale">
-                                                        <span class="product__item-sale-number">
-                                                            13%
-                                                        </span>
-                                                        <span class="product__item-sale-text">
-                                                            Giảm
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="product__item-box">
-                                                    <span class="product__name">
-                                                        Điện thoại thông minh VSmart live 4 4/64gb
-                                                    </span>
-                                                    <div class="product__price">
-                                                        <span class="product__price-origin">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                4.500.000
-                                                            </span>
-                                                        </span>
-                                                        <span class="product__price-sale">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                3.999.000
-                                                            </span>
-                                                        </span>
-    
-                                                    </div>
-                                                    <div class="product__info">
-                                                        <div class="product__info-icon-heart">
-                                                            <i class="fas fa-heart"></i>
-                                                        </div>
-                                                        <div class="product__info-icon-star">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <span class="product__info-sold">
-                                                                Đã bán
-                                                            </span>
-                                                            <span class="product__info-sold-number">
-                                                                99k
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__location">
-                                                        Đà Nẵng
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col lg-2-4 md-3 sm-6">
-                                        <div class="product__item">
-                                            <a href="" class="product__item-link">
-                                                <div class="product__item-bg"
-                                                    style="background-image: url('./assets/img/bg-product-img.png')">
-                                                    <img class="product__item-img" src="./assets/img/product-img-1.jpg"
-                                                        alt="Product 1">
-                                                    <span class="product__item-fav">Yêu thích</span>
-                                                    <div class="product__item-sale">
-                                                        <span class="product__item-sale-number">
-                                                            50%
-                                                        </span>
-                                                        <span class="product__item-sale-text">
-                                                            Giảm
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="product__item-box">
-                                                    <span class="product__name">
-                                                        Kính cường lực Full Màn 21D cho 5/5s/6/6plus/6s/6s
-                                                    </span>
-                                                    <div class="product__price">
-                                                        <span class="product__price-origin">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                150.000
-                                                            </span>
-                                                        </span>
-                                                        <span class="product__price-sale">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                150.000
-                                                            </span>
-                                                        </span>
-    
-                                                    </div>
-                                                    <div class="product__info">
-                                                        <div class="product__info-icon-heart icon-heart--active">
-                                                            <i class="far fa-heart"></i>
-                                                        </div>
-                                                        <div class="product__info-icon-star">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <span class="product__info-sold">
-                                                                Đã bán
-                                                            </span>
-                                                            <span class="product__info-sold-number">
-                                                                80,9k
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__location">
-                                                        Hà Nội
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col lg-2-4 md-3 sm-6">
-                                        <div class="product__item">
-                                            <a href="" class="product__item-link">
-                                                <div class="product__item-bg"
-                                                    style="background-image: url('./assets/img/bg-product-img.png')">
-                                                    <img class="product__item-img" src="./assets/img/product-img-3.jpg"
-                                                        alt="Product 1">
-                                                    <span class="product__item-fav">Yêu thích</span>
-                                                    <div class="product__item-sale">
-                                                        <span class="product__item-sale-number">
-                                                            34%
-                                                        </span>
-                                                        <span class="product__item-sale-text">
-                                                            Giảm
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="product__item-box">
-                                                    <span class="product__name">
-                                                        Điện thoại Vsmart Active 3 (4GB/64GB) - Hàng chính hãng
-                                                    </span>
-                                                    <div class="product__price">
-                                                        <span class="product__price-origin">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                4.990.000
-                                                            </span>
-                                                        </span>
-                                                        <span class="product__price-sale">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                2.979.000
-                                                            </span>
-                                                        </span>
-    
-                                                    </div>
-                                                    <div class="product__info">
-                                                        <div class="product__info-icon-heart icon-heart--active">
-                                                            <i class="far fa-heart"></i>
-                                                        </div>
-                                                        <div class="product__info-icon-star">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <span class="product__info-sold">
-                                                                Đã bán
-                                                            </span>
-                                                            <span class="product__info-sold-number">
-                                                                80,9k
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__location">
-                                                        Hà Nội
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col lg-2-4 md-3 sm-6">
-                                        <div class="product__item">
-                                            <a href="" class="product__item-link">
-                                                <div class="product__item-bg"
-                                                    style="background-image: url('./assets/img/bg-product-img.png')">
-                                                    <img class="product__item-img" src="./assets/img/product-img-4.jpg"
-                                                        alt="Product 1">
-                                                    <span class="product__item-fav">Yêu thích</span>
-                                                    <div class="product__item-sale">
-                                                        <span class="product__item-sale-number">
-                                                            34%
-                                                        </span>
-                                                        <span class="product__item-sale-text">
-                                                            Giảm
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="product__item-box">
-                                                    <span class="product__name">
-                                                        Điện thoại OPPO Reno3 Pro (8GB/256GB) - Hàng chính hãng
-                                                    </span>
-                                                    <div class="product__price">
-                                                        <span class="product__price-origin">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                4.990.000
-                                                            </span>
-                                                        </span>
-                                                        <span class="product__price-sale">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                2.979.000
-                                                            </span>
-                                                        </span>
-    
-                                                    </div>
-                                                    <div class="product__info">
-                                                        <div class="product__info-icon-heart icon-heart--active">
-                                                            <i class="far fa-heart"></i>
-                                                        </div>
-                                                        <div class="product__info-icon-star">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <span class="product__info-sold">
-                                                                Đã bán
-                                                            </span>
-                                                            <span class="product__info-sold-number">
-                                                                80,9k
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__location">
-                                                        Hà Nội
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col lg-2-4 md-3 sm-6">
-                                        <div class="product__item">
-                                            <a href="" class="product__item-link">
-                                                <div class="product__item-bg"
-                                                    style="background-image: url('./assets/img/bg-product-img.png')">
-                                                    <img class="product__item-img" src="./assets/img/product-img-5.jpg"
-                                                        alt="Product 1">
-                                                    <span class="product__item-fav">Yêu thích</span>
-                                                    <div class="product__item-sale">
-                                                        <span class="product__item-sale-number">
-                                                            19%
-                                                        </span>
-                                                        <span class="product__item-sale-text">
-                                                            Giảm
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="product__item-box">
-                                                    <span class="product__name">
-                                                        Điện thoại Vivo X50 8GB + 128GB - Hàng chính hãng
-                                                    </span>
-                                                    <div class="product__price">
-                                                        <span class="product__price-origin">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                14.990.000
-                                                            </span>
-                                                        </span>
-                                                        <span class="product__price-sale">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                12.599.000
-                                                            </span>
-                                                        </span>
-    
-                                                    </div>
-                                                    <div class="product__info">
-                                                        <div class="product__info-icon-heart icon-heart--active">
-                                                            <i class="far fa-heart"></i>
-                                                        </div>
-                                                        <div class="product__info-icon-star">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <span class="product__info-sold">
-                                                                Đã bán
-                                                            </span>
-                                                            <span class="product__info-sold-number">
-                                                                80,9k
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__location">
-                                                        Hà Nội
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                <div class="col lg-2-4 md-3 sm-6">
-                                <div class="product__item">
-                                    <a href="" class="product__item-link">
                                             <div class="product__item-bg"
                                                 style="background-image: url('./assets/img/bg-product-img.png')">
                                                 <img class="product__item-img" src="./assets/img/product-img-2.jpg"
@@ -1020,69 +754,394 @@
                                 <div class="col lg-2-4 md-3 sm-6">
                                     <div class="product__item">
                                         <a href="" class="product__item-link">
-                                                <div class="product__item-bg"
-                                                    style="background-image: url('./assets/img/bg-product-img.png')">
-                                                    <img class="product__item-img" src="./assets/img/product-img-1.jpg"
-                                                        alt="Product 1">
-                                                    <span class="product__item-fav">Yêu thích</span>
-                                                    <div class="product__item-sale">
-                                                        <span class="product__item-sale-number">
-                                                            13%
-                                                        </span>
-                                                        <span class="product__item-sale-text">
-                                                            Giảm
-                                                        </span>
-                                                    </div>
+                                            <div class="product__item-bg"
+                                                style="background-image: url('./assets/img/bg-product-img.png')">
+                                                <img class="product__item-img" src="./assets/img/product-img-1.jpg"
+                                                    alt="Product 1">
+                                                <span class="product__item-fav">Yêu thích</span>
+                                                <div class="product__item-sale">
+                                                    <span class="product__item-sale-number">
+                                                        50%
+                                                    </span>
+                                                    <span class="product__item-sale-text">
+                                                        Giảm
+                                                    </span>
                                                 </div>
-                                                <div class="product__item-box">
-                                                    <span class="product__name">
-                                                    Kính cường lực Full Màn 21D cho Iphone 6/6s/7/7plus promax                                            
+                                            </div>
+                                            <div class="product__item-box">
+                                                <span class="product__name">
+                                                    Kính cường lực Full Màn 21D cho 5/5s/6/6plus/6s/6s
                                                 </span>
-                                                    <div class="product__price">
-                                                        <span class="product__price-origin">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                4.500.000
-                                                            </span>
+                                                <div class="product__price">
+                                                    <span class="product__price-origin">
+                                                        <span class="product__price-unit">
+                                                            đ
                                                         </span>
-                                                        <span class="product__price-sale">
-                                                            <span class="product__price-unit">
-                                                                đ
-                                                            </span>
-                                                            <span class="product__price-number">
-                                                                3.999.000
-                                                            </span>
+                                                        <span class="product__price-number">
+                                                            150.000
                                                         </span>
-    
+                                                    </span>
+                                                    <span class="product__price-sale">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            150.000
+                                                        </span>
+                                                    </span>
+
+                                                </div>
+                                                <div class="product__info">
+                                                    <div class="product__info-icon-heart icon-heart--active">
+                                                        <i class="far fa-heart"></i>
                                                     </div>
-                                                    <div class="product__info">
-                                                        <div class="product__info-icon-heart">
-                                                            <i class="fas fa-heart"></i>
-                                                        </div>
-                                                        <div class="product__info-icon-star">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <span class="product__info-sold">
-                                                                Đã bán
-                                                            </span>
-                                                            <span class="product__info-sold-number">
-                                                                99k
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__location">
-                                                        Đà Nẵng
+                                                    <div class="product__info-icon-star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span class="product__info-sold">
+                                                            Đã bán
+                                                        </span>
+                                                        <span class="product__info-sold-number">
+                                                            80,9k
+                                                        </span>
                                                     </div>
                                                 </div>
-                                            </a>
-                                        </div>
+                                                <div class="product__location">
+                                                    Hà Nội
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                
+                                </div>
+                                <div class="col lg-2-4 md-3 sm-6">
+                                    <div class="product__item">
+                                        <a href="" class="product__item-link">
+                                            <div class="product__item-bg"
+                                                style="background-image: url('./assets/img/bg-product-img.png')">
+                                                <img class="product__item-img" src="./assets/img/product-img-3.jpg"
+                                                    alt="Product 1">
+                                                <span class="product__item-fav">Yêu thích</span>
+                                                <div class="product__item-sale">
+                                                    <span class="product__item-sale-number">
+                                                        34%
+                                                    </span>
+                                                    <span class="product__item-sale-text">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-box">
+                                                <span class="product__name">
+                                                    Điện thoại Vsmart Active 3 (4GB/64GB) - Hàng chính hãng
+                                                </span>
+                                                <div class="product__price">
+                                                    <span class="product__price-origin">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            4.990.000
+                                                        </span>
+                                                    </span>
+                                                    <span class="product__price-sale">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            2.979.000
+                                                        </span>
+                                                    </span>
+
+                                                </div>
+                                                <div class="product__info">
+                                                    <div class="product__info-icon-heart icon-heart--active">
+                                                        <i class="far fa-heart"></i>
+                                                    </div>
+                                                    <div class="product__info-icon-star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span class="product__info-sold">
+                                                            Đã bán
+                                                        </span>
+                                                        <span class="product__info-sold-number">
+                                                            80,9k
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="product__location">
+                                                    Hà Nội
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col lg-2-4 md-3 sm-6">
+                                    <div class="product__item">
+                                        <a href="" class="product__item-link">
+                                            <div class="product__item-bg"
+                                                style="background-image: url('./assets/img/bg-product-img.png')">
+                                                <img class="product__item-img" src="./assets/img/product-img-4.jpg"
+                                                    alt="Product 1">
+                                                <span class="product__item-fav">Yêu thích</span>
+                                                <div class="product__item-sale">
+                                                    <span class="product__item-sale-number">
+                                                        34%
+                                                    </span>
+                                                    <span class="product__item-sale-text">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-box">
+                                                <span class="product__name">
+                                                    Điện thoại OPPO Reno3 Pro (8GB/256GB) - Hàng chính hãng
+                                                </span>
+                                                <div class="product__price">
+                                                    <span class="product__price-origin">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            4.990.000
+                                                        </span>
+                                                    </span>
+                                                    <span class="product__price-sale">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            2.979.000
+                                                        </span>
+                                                    </span>
+
+                                                </div>
+                                                <div class="product__info">
+                                                    <div class="product__info-icon-heart icon-heart--active">
+                                                        <i class="far fa-heart"></i>
+                                                    </div>
+                                                    <div class="product__info-icon-star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span class="product__info-sold">
+                                                            Đã bán
+                                                        </span>
+                                                        <span class="product__info-sold-number">
+                                                            80,9k
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="product__location">
+                                                    Hà Nội
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col lg-2-4 md-3 sm-6">
+                                    <div class="product__item">
+                                        <a href="" class="product__item-link">
+                                            <div class="product__item-bg"
+                                                style="background-image: url('./assets/img/bg-product-img.png')">
+                                                <img class="product__item-img" src="./assets/img/product-img-5.jpg"
+                                                    alt="Product 1">
+                                                <span class="product__item-fav">Yêu thích</span>
+                                                <div class="product__item-sale">
+                                                    <span class="product__item-sale-number">
+                                                        19%
+                                                    </span>
+                                                    <span class="product__item-sale-text">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-box">
+                                                <span class="product__name">
+                                                    Điện thoại Vivo X50 8GB + 128GB - Hàng chính hãng
+                                                </span>
+                                                <div class="product__price">
+                                                    <span class="product__price-origin">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            14.990.000
+                                                        </span>
+                                                    </span>
+                                                    <span class="product__price-sale">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            12.599.000
+                                                        </span>
+                                                    </span>
+
+                                                </div>
+                                                <div class="product__info">
+                                                    <div class="product__info-icon-heart icon-heart--active">
+                                                        <i class="far fa-heart"></i>
+                                                    </div>
+                                                    <div class="product__info-icon-star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span class="product__info-sold">
+                                                            Đã bán
+                                                        </span>
+                                                        <span class="product__info-sold-number">
+                                                            80,9k
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="product__location">
+                                                    Hà Nội
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col lg-2-4 md-3 sm-6">
+                                    <div class="product__item">
+                                        <a href="" class="product__item-link">
+                                            <div class="product__item-bg"
+                                                style="background-image: url('./assets/img/bg-product-img.png')">
+                                                <img class="product__item-img" src="./assets/img/product-img-2.jpg"
+                                                    alt="Product 1">
+                                                <span class="product__item-fav">Yêu thích</span>
+                                                <div class="product__item-sale">
+                                                    <span class="product__item-sale-number">
+                                                        13%
+                                                    </span>
+                                                    <span class="product__item-sale-text">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-box">
+                                                <span class="product__name">
+                                                    Điện thoại thông minh VSmart live 4 4/64gb
+                                                </span>
+                                                <div class="product__price">
+                                                    <span class="product__price-origin">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            4.500.000
+                                                        </span>
+                                                    </span>
+                                                    <span class="product__price-sale">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            3.999.000
+                                                        </span>
+                                                    </span>
+
+                                                </div>
+                                                <div class="product__info">
+                                                    <div class="product__info-icon-heart">
+                                                        <i class="fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="product__info-icon-star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span class="product__info-sold">
+                                                            Đã bán
+                                                        </span>
+                                                        <span class="product__info-sold-number">
+                                                            99k
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="product__location">
+                                                    Đà Nẵng
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col lg-2-4 md-3 sm-6">
+                                    <div class="product__item">
+                                        <a href="" class="product__item-link">
+                                            <div class="product__item-bg"
+                                                style="background-image: url('./assets/img/bg-product-img.png')">
+                                                <img class="product__item-img" src="./assets/img/product-img-1.jpg"
+                                                    alt="Product 1">
+                                                <span class="product__item-fav">Yêu thích</span>
+                                                <div class="product__item-sale">
+                                                    <span class="product__item-sale-number">
+                                                        13%
+                                                    </span>
+                                                    <span class="product__item-sale-text">
+                                                        Giảm
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-box">
+                                                <span class="product__name">
+                                                    Kính cường lực Full Màn 21D cho Iphone 6/6s/7/7plus promax
+                                                </span>
+                                                <div class="product__price">
+                                                    <span class="product__price-origin">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            4.500.000
+                                                        </span>
+                                                    </span>
+                                                    <span class="product__price-sale">
+                                                        <span class="product__price-unit">
+                                                            đ
+                                                        </span>
+                                                        <span class="product__price-number">
+                                                            3.999.000
+                                                        </span>
+                                                    </span>
+
+                                                </div>
+                                                <div class="product__info">
+                                                    <div class="product__info-icon-heart">
+                                                        <i class="fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="product__info-icon-star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span class="product__info-sold">
+                                                            Đã bán
+                                                        </span>
+                                                        <span class="product__info-sold-number">
+                                                            99k
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="product__location">
+                                                    Đà Nẵng
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
                                 <div class="col lg-2-4 md-3 sm-6">
                                     <div class="product__item">
                                         <a href="" class="product__item-link">

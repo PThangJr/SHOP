@@ -15,6 +15,7 @@
     --header-height: 120px;
     --header-navbar-height: 32px;
     --header-controls-height: calc(var(--header-height) - var(--header-navbar-height));
+    --menu-bars-width: 70%;
 }
 
 * {
@@ -59,4 +60,10 @@ a:focus {
     height: 100%;
     background-color: rgba(0, 0, 0,.2);
     /* background: green; */
+}
+.block {
+    display: block !important;
+}
+.none {
+    display: none !important;
 }
